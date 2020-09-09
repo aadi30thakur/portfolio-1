@@ -62,7 +62,8 @@
                   <a href="#"><i class="fa fa-github"></i></a>
                 </li>
                 <li>
-                  <a href="#"><i class="fa fa-globe"></i></a>
+                  
+                  <a href="mailto:kunalbedi496@gmail.com"><i class="fa fa-envelope"></i></a>
                 </li>
               </ul>
             </div>
@@ -91,7 +92,7 @@
               </div>
               <div class="col-md-6">
                 <div class="right-text">
-                  <h4>Reflux HTML CSS Template</h4>
+                  <h4 id="Autotype"></h4>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, cum deleniti! Excepturi rem atque doloremque dolore architecto labore, temporibus, impedit hic, nulla cum fuga ipsam nisi inventore deserunt quasi totam.
                   </p>
@@ -421,7 +422,7 @@
 
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+<script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
     <script src="assets/js/isotope.min.js"></script>
     <script src="assets/js/owl-carousel.js"></script>
     <script src="assets/js/lightbox.js"></script>
@@ -475,6 +476,25 @@
       $(window).scroll(function() {
         checkSection();
       });
+
+
+
+      var app = document.getElementById('Autotype');
+
+var typewriter = new Typewriter(app, {
+    loop: true
+});
+
+typewriter.typeString('Welcome to my Portfolio' )
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('Wanted  to know about me ?')
+    .pauseFor(2500)
+    .deleteChars(26)
+    .typeString('<strong>Scroll Down !</strong>')
+    .pauseFor(2500)
+    .start();
+
     </script>
   </body>
 </html>
